@@ -1,0 +1,71 @@
+<html>  
+<head>  
+    <title>PHP login</title>
+     
+</head>  
+<body>  
+    <center>
+    <div id="login">
+
+
+
+    <div class="frm">  
+        <h1>Login</h1>  
+        <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
+            <p>  
+
+                <input type = "text" class="user" placeholder="Brukernavn" name  = "user" />  
+            </p>  
+            <p>  
+
+                <input type = "password" class="pass" placeholder="Passord" name  = "pass" />  
+                
+            </p>  
+            <p>     
+                <input type =  "submit" class="button" value = "Login" />  
+            </p> 
+
+        </form>  
+        <a href="signup.php">Trykk her for å registrere deg</a>
+
+    </div>     
+    <script>  
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("Brukernavn og passordfelt er tomt");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script>  
+
+
+
+
+</div>
+</center>
+
+<style>
+    body{
+    background-color: grey;
+    text-align: center;
+}
+
+</style>
+
+
+</body>     
+</html> 
