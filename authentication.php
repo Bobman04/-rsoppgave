@@ -1,4 +1,6 @@
     <?php      
+                        
+       
         include('connection.php');  
         $username = $_POST['user'];  
         $password = $_POST['pass'];  
@@ -14,9 +16,11 @@
             $count = mysqli_num_rows($result);  
               
             if($count == 1){  
-                header("Location: main.html");  ;  
+                header("Location: main.php"); 
             }  
             else{  
                 echo "<h1> Login failed. Invalid username or password.</h1>";  
+
             }     
+        
     ?>  

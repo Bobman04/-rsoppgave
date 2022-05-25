@@ -1,0 +1,24 @@
+Your name: Teodor
+Your computer's name: teodor-ubuntu-server
+username: teodor
+password: Admin123
+
+root username: root
+root password: Admin123
+
+Login to mysql via terminal: mysql -u teodor -p
+Mysql password: Admin@123
+
+ssh login: ssh teodor@10.2.2.13
+Security: 
+Password
+
+
+Installed:
+vim
+apache2
+openssh-server
+mysql-server
+php libapache2-mod-php php-mysql
+anydesk
+tree
